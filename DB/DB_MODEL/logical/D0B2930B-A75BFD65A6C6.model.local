@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D0B2930B-1B50-2E20-B2E0-A75BFD65A6C6">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-09 16:01:44 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<mainView class="oracle.dbtools.crest.swingui.logical.DPVLogical">
+<createdBy>HOME-PC</createdBy>
+<modifiedBy>HOME-PC</modifiedBy>
+<createdTime>2018-10-09 16:08:41 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+</mainView>
+</LogicalDesign>

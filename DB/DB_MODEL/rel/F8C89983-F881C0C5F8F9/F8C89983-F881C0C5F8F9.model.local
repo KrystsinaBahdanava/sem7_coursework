@@ -1,0 +1,2010 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="F8C89983-7B02-C0D4-2573-F881C0C5F8F9">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-09 16:03:24 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<Tables>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03FC974C-3792-776F-6732-35EF12A1B747" name="ATT_ADDRESS">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:44:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="DDB567C9-85C0-34E2-E140-00189E5F2A6D">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:01:25 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="9DD02AB4-AFEB-B51C-2590-3201DD4A857C">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:01:25 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="6DE29404-FFDA-D953-FB9C-928157B6D547">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:01:25 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_OID" id="ED2CF070-54F5-5060-77D5-4E33632A3E4D">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:01:25 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B053F84B-48DC-883A-5CA1-DECD44C55B82" referredColumn="3F5341F7-B7C9-AF9F-3F37-AA4DD7E68E89"/>
+</associations>
+</Column>
+<Column name="IS_ACTIVE" id="95902751-E1CA-6BD9-3AEA-EE4951736E19">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:01:25 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="40CDD9CE-488B-C2BD-CDD7-77AC0DC2C181">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:01:25 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="15B486B4-C5CF-0C7A-2973-771C1807A626">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:01:25 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B715AB16-70B5-06DE-4815-3E57EB39DE43" name="ADDRESS_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:03:09 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDB567C9-85C0-34E2-E140-00189E5F2A6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EF213DE-3DF4-E536-51B0-3A78A1E3E0D5" name="ATT_ADDRESS_ATT_REGION_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED2CF070-54F5-5060-77D5-4E33632A3E4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97214A04-FC47-6B23-63EB-EABA4B991967" name="ATT_CART">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:00 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="A7B61781-3623-265F-F76B-4DB03DA6E828">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:17 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="F1AE41CB-FA2E-57F9-0B2C-FB350A33A6BC">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:17 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CART_CODE" id="202DFCA1-4F62-232E-E8F4-5C4AF4A53EDF">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:17 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="5CEFF57D-7950-3FFB-CB35-31A57E274A1F">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:17 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="D7A9377B-B0D2-BAE9-1A76-E4A131B7A465">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:17 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="734982A6-2644-F10E-7E22-4C743DADB9E1">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:17 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MENU_POS_OID" id="076FD046-DE75-5A96-6DE8-D3F98762E101">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:07:31 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B8E45FB-D777-A688-6F9F-7A2B3C22CDAE" referredColumn="45350A2C-3F70-5DD4-5D7F-4BC51C0B17E4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11A52FC0-05D3-C1C2-0EE0-462AE65954C0" name="ATT_CART_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 16:04:21 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7B61781-3623-265F-F76B-4DB03DA6E828"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2FDE192-7290-9CF5-777D-8CE016ED749C" name="ATT_CART_ATT_MENU_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:25:00 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="076FD046-DE75-5A96-6DE8-D3F98762E101"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89CC644D-198C-C505-D66F-0E3F36E3A54D" name="ATT_CITY">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:44:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="C1FF1821-4FB4-09A1-7D5D-0A09336E23A1">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:37 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="E4E4DD99-0779-6807-121A-B6EA3D22AC6E">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:37 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_NAME" id="92F79A4D-FDF3-E73F-53A1-B67A9E941E0D">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:54:20 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="348373E2-2735-B536-F493-9ED100F98F47">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:37 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="0D254B5E-C4C0-CB66-2B00-F45EC920A332">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:37 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="4869FEBA-C2E1-8066-E378-CD72DC23CE27">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:37 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_OID" id="B4B90DCF-F0DC-B08F-C269-911D2F898413">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:54:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D67AB74C-B313-FDFC-68BA-73E2AF2A506D" referredColumn="EFFB3586-329D-47AB-52E7-BCD029FF7A91"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C510711F-E3EE-DDAF-72CC-BD9FCF8489FC" name="CITY_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:54:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1FF1821-4FB4-09A1-7D5D-0A09336E23A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FEDDBDF-942B-A8C7-368E-C77E582CC0F7" name="CITY_COUNTRY_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:54:45 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4B90DCF-F0DC-B08F-C269-911D2F898413"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29C42F4C-9E51-AF3D-8F00-0BAED9B85A60" name="ATT_COUNTRY">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:44:54 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="EFFB3586-329D-47AB-52E7-BCD029FF7A91">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="18F7B050-74F3-335F-0F17-20484B706651">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_FULL_NAME" id="B2C020B0-A47B-F248-3D94-8609BD19FF7D">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_CODE" id="700501FD-6D4C-D582-6BC6-A3F6CA430295">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="095B67A2-4D43-1DC4-779F-22DFA59647C1">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="24A20014-976A-4B7B-1724-E29FF72C0840">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="406CB13A-A24B-E3E5-AACF-B7DF3B027D71">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC72D916-73CD-EA2E-5F8F-DB8862E0778C" name="COUNTRY_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:52:40 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFFB3586-329D-47AB-52E7-BCD029FF7A91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76680BD0-6065-8B72-EE26-8E3D15FD5027" name="ATT_FEEDBACK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:52:51 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="5C1ACC37-D96B-4661-F9EE-31D7A9FBD715">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:53:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="0510C1C6-D685-1965-3123-9D920933E000">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:53:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MARK" id="578B64D1-9773-CE89-9A55-243C457DFC24">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:53:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENT" id="378A5C24-467A-7A51-7726-2A7339377CBE">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:54:24 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_OID" id="43AE11BB-15C1-2742-426D-D4A1FDCFEBA2">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:54:24 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2978166-3F34-9346-4948-9583870E1BCE" referredColumn="9613B973-9441-5FC6-B160-7BDFE7B3A7D2"/>
+</associations>
+</Column>
+<Column name="RSTRNT_OID" id="B6AFFCD8-6D04-331D-5200-1AE3BA4214CB">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:54:24 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1F0970F-CCAE-08FD-8E61-6D98F77CBF09" referredColumn="79CE6ABB-D365-CDF2-2230-8122B5AA7B64"/>
+</associations>
+</Column>
+<Column name="IS_ACTIVE" id="23EA50CE-F4C8-4FAF-AB41-F12985D649E8">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:53:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="2D9CB52D-97A9-D2CA-B440-BD226092E291">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:53:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="E97F9188-A0A5-4A4A-8862-D9F6EB9EE801">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:53:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52C6B2C5-CC7B-F0A5-5F0C-F41A227945F4" name="ATT_MARK_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:53:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C1ACC37-D96B-4661-F9EE-31D7A9FBD715"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87DEFA47-A97F-BD5F-D85B-145CC5EDC5E3" name="ATT_FEEDBACK_ATT_RSTRNT_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:54:59 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6AFFCD8-6D04-331D-5200-1AE3BA4214CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCC28B8A-CF09-E4A3-1F5E-B0A70F2F1DC4" name="ATT_FEEDBACK_ATT_USER_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:55:07 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43AE11BB-15C1-2742-426D-D4A1FDCFEBA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C966BAB6-CBFD-2BB8-38DF-27565041E798" name="ATT_MENU">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:50:00 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="45350A2C-3F70-5DD4-5D7F-4BC51C0B17E4">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="D418E33E-A110-B136-0CB1-D460F27DBBF2">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISH_NAME" id="C8F4520C-4857-BAF7-405B-A9A7D43E51CD">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISH_DESC" id="D060E68F-B284-478F-429C-B96A497F3D1B">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="1917428A-4787-B49A-D583-D6BDBD100EED">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:46:16 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISH_PIC" id="CE6879DF-BCC8-0C95-A5DF-702B6372DC04">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RSTRNT_OID" id="75A5D740-8110-7316-2762-2D74D25693AB">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67107FEB-0EA9-6DEF-8E8F-DA26237B325A" referredColumn="79CE6ABB-D365-CDF2-2230-8122B5AA7B64"/>
+</associations>
+</Column>
+<Column name="IS_ACTIVE" id="6EA1C7E9-AEBC-12E2-7705-EA8E35DB4C04">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="98C1A2F6-A032-26AD-BDFE-304890BFB3DD">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="EFF4DBB0-E4B6-2067-47AF-F53DA8D91614">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF8BD119-EAE6-D11E-CBCA-C4FA4E3CB037" name="ATT_MENU_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45350A2C-3F70-5DD4-5D7F-4BC51C0B17E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77240D53-2519-92D7-DBD7-477D6A430C36" name="ATT_MENU_ATT_RSTRNT_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75A5D740-8110-7316-2762-2D74D25693AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A385E79-E6BA-F266-43F8-7A47A707C002" name="ATT_ORDER">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:37:14 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="960CE7B7-2B0B-A6A8-C302-FFBC65D7A1F6">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:42:57 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="6AC1F2C7-D7C4-A46E-E3FB-8A679EF951CF">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:42:57 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="0217B730-6FAA-72DC-7A89-A5AAF4CCAEB0">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:42:57 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="0E3ED134-43BB-3204-6CFA-3D468E9CB5AC">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:42:57 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="47987DB4-447C-4DB6-0FCD-E659738176DD">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:42:57 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS_OID" id="88251F96-64F6-80D7-7A45-A14E45A83FD4">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:02:57 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F4220B6-004E-205E-B38F-C78D59AAF59D" referredColumn="DDB567C9-85C0-34E2-E140-00189E5F2A6D"/>
+</associations>
+</Column>
+<Column name="CLIENT_OID" id="A093D6C4-12FF-9440-A819-131565AA3C60">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:44:27 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18047D4F-8F4F-09E2-268D-C9C7EC61F6B0" referredColumn="888965C6-B418-96F1-7BB2-DDF6E94B17DD"/>
+</associations>
+</Column>
+<Column name="STATUS_OID" id="8F68CED4-EAE7-3217-4569-EDE10AFEBB47">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:21 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97C2B0C6-0801-73D4-1E9B-D4F0C081A6CD" referredColumn="8D316035-575F-1E20-D0DA-50F46C1DC667"/>
+</associations>
+</Column>
+<Column name="CART_OID" id="DFA74666-12B7-CA6F-4B24-818E90B841FD">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:46:54 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBF07D75-5682-0C87-C05D-066B07FD5D3E" referredColumn="A7B61781-3623-265F-F76B-4DB03DA6E828"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="737DD684-B077-6A3A-9880-052E66CFB5BF" name="ATT_ORDER_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:03:05 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="960CE7B7-2B0B-A6A8-C302-FFBC65D7A1F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55186BD3-76C3-9C5A-1EB7-EDC83059AEEA" name="ATT_ORDER_ADDRESS_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:03:12 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88251F96-64F6-80D7-7A45-A14E45A83FD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BC1F528-3CB2-7B3E-DCC0-343FBB533C62" name="ATT_ORDER_ATT_CLIENT_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:44:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A093D6C4-12FF-9440-A819-131565AA3C60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46816532-1DC7-19A0-2F10-9DAF7275D15E" name="ATT_ORDER_ATT_ORDER_STATUS_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:49 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F68CED4-EAE7-3217-4569-EDE10AFEBB47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4A1A8E5-C94E-0ACB-760A-7547876B8F1D" name="ATT_ORDER_ATT_CART_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:47:00 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFA74666-12B7-CA6F-4B24-818E90B841FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="54230FB0-7874-9357-0AD2-87F820D18720" name="ATT_ORDER_STATUS">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:37:01 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="8D316035-575F-1E20-D0DA-50F46C1DC667">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:39 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="A0234104-B375-D1CF-0C1C-05498BB42C08">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:39 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="76C1ECD1-7C7F-C550-DC0F-850D15740773">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:39 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="51700893-EB7D-2521-7517-1BCC5190908F">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:39 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="613B875A-EB6A-D275-1CC2-AFD30C4936D2">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:39 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="89002B53-D077-BB69-DD66-120AD1CCF130">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:39 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6D14631-D80F-810A-D496-021762F04F48" name="ATT_ORDER_STATUS_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:44 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D316035-575F-1E20-D0DA-50F46C1DC667"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7DF8292-6B38-4942-A898-A2351B9E2C9D" name="ATT_REGION">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:50:39 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="3F5341F7-B7C9-AF9F-3F37-AA4DD7E68E89">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="BC241ACC-F7A3-CCA4-D977-BB57BC35B846">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="B953FC8B-DC03-D8DD-20C0-0D0697885C92">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="BA6DA0A5-6CAF-0728-DA57-8CDFD5DA5E45">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="75A52055-991A-F295-E769-DC336C260CE3">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_NAME" id="5014A83B-8838-3362-A53D-2DD90350D33A">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_OID" id="C73D6A05-0652-264C-29F3-317CE8BEB55A">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:52:09 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B48DF584-24E0-232B-3DD7-486C8F1B7BB4" referredColumn="C1FF1821-4FB4-09A1-7D5D-0A09336E23A1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADBB95F7-A15C-1390-BACA-D9CA585BC7F4" name="ATT_REGION_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:34 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F5341F7-B7C9-AF9F-3F37-AA4DD7E68E89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB41986A-CBE3-C078-D159-81BEE6AC219D" name="ATT_REGION_ATT_CITY_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:52:14 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C73D6A05-0652-264C-29F3-317CE8BEB55A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DE0901E-A723-4EEA-163F-A9CEE62EF845" name="ATT_REST_CATEGORY">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:47:30 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="BEB7934D-326F-0182-1B75-B51B3F6BB2C6">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:48:06 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="46B2F883-4ACF-5157-F185-8EC1FE6A2C27">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:48:06 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_NAME" id="45E167F9-76E9-1C55-8F4B-35D3665C854E">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:48:06 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="858CD25F-7E17-97EE-7D89-6A4EEADA473E">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:48:06 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="741A31E2-92AE-64AB-CFAB-0E8795F628EA">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:48:06 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="DC2B5A90-D4C1-B9FC-6347-BD828308CC06">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:48:06 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="72AC98DC-FC8F-A96C-DE9B-07C7B909B85A" name="ATT_REST_CATEGORY_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:42 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEB7934D-326F-0182-1B75-B51B3F6BB2C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF63064A-F04D-A053-B0C0-5E535304F803" name="ATT_ROLE">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:43:01 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="41081A45-6F19-2E0C-B4B2-BBB4E5F489D3">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:43:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="FD7143F7-0718-5C0C-A632-AFD73E5971BF">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:43:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLE_NAME" id="0211A8A9-6AF3-31C9-77B3-65F8F30A1E9A">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:43:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="390FD4E2-5A34-05E3-30EC-22EBBDC1FFA8">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:43:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="71B83D9A-5089-E73A-02CC-401D091B00F0">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:43:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="EA30499D-CA11-4B0D-D6A6-75EEDFF607C0">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:43:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E129D78-3D2D-428F-4FB0-2321CE77064D" name="ATT_ROLE_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:44:22 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41081A45-6F19-2E0C-B4B2-BBB4E5F489D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA0A3B50-1AF5-4930-84BC-D15413EDBE51" name="ATT_RSTRNT">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:48:12 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="79CE6ABB-D365-CDF2-2230-8122B5AA7B64">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="3DAADD92-DBFB-BF1C-F85A-2B34902D1DCF">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RSTRNT_NAME" id="5B319811-194A-3EB4-C2B0-6D7E544D1ED7">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="22BDF8A8-4F82-1FDC-AC13-2C157DEAE5A7">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="AC909505-4957-6999-544E-088A37228EA3">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="E691D175-AA5A-0EB4-4B36-2C56DAB44B7B">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_OID" id="46129AEB-55B3-72B4-E471-1D4718CEEBB7">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="841C41F8-58DC-B01A-8B67-DC70BA0F294B" referredColumn="BEB7934D-326F-0182-1B75-B51B3F6BB2C6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2AF9E3A8-707F-610D-A6C1-1A637D0E8753" name="ATT_RSTRNT_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:38 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79CE6ABB-D365-CDF2-2230-8122B5AA7B64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C77C2A97-AFBF-4B52-CF98-3DE56F964F3B" name="ATT_RSTRNT_ATT_REST_CATEGORY_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:50 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46129AEB-55B3-72B4-E471-1D4718CEEBB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5347E2DC-F369-CC2C-5A53-6546B8F09F9A" name="ATT_UNAUTHORISED_CLIENT">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:37:24 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="888965C6-B418-96F1-7BB2-DDF6E94B17DD">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:52 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="A379508D-CCB8-21DD-DA29-58A18E883F56">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:52 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="952A4EA5-1F31-6A47-2BE8-4A8A2D958A45">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:52 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="DCB1AFEC-E918-731C-8266-37A3C5BE8B6E">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:52 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="242A5F0A-AA7D-4E1A-44E5-0CA11580B6C3">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:52 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="9B83C2DF-A926-7EF2-CC73-76858368EBE7">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:52 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="D022093A-C4F2-04CD-300E-9428EC91EE14">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:52 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89A86024-966D-763C-5B00-5E154488A734" name="ATT_CLIENT_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:04:59 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="888965C6-B418-96F1-7BB2-DDF6E94B17DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C35B3A6-D06C-E0A4-EFC6-FF015A1E1321" name="ATT_USER">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:40:47 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BE_ID" id="9613B973-9441-5FC6-B160-7BDFE7B3A7D2">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:42:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BE_NAME" id="36124A04-F6B2-FD45-5EA8-73872A5AA463">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:42:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_NAME" id="22B9EAA3-F684-C3F0-A5E9-8B42990E0BF5">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:42:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="9BF2F674-5180-DF77-5D60-00EC3C069C3F">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:42:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLE_OID" id="1FCFA814-0E7B-162E-A639-57100F0C65E8">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:42:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4B83984C-FF27-1378-7CAE-00E713179B53" referredColumn="41081A45-6F19-2E0C-B4B2-BBB4E5F489D3"/>
+</associations>
+</Column>
+<Column name="IS_ACTIVE" id="80302131-2D91-34BB-7559-0B1A8C2060A2">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:44:11 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="START_DATE" id="A669815E-A1FC-059B-2F98-8071D9E69344">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:44:11 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_DATE" id="A56BEE5A-108F-F366-CD76-F284B1449192">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:44:11 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB9C2489-3704-72A0-DAD1-25A37CD55330" name="ATT_USER_PK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:44:19 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9613B973-9441-5FC6-B160-7BDFE7B3A7D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21FD20F2-9F45-D8A3-F5E0-78CFFA00FD5D" name="ATT_USER_ATT_ROLE_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:45:01 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1FCFA814-0E7B-162E-A639-57100F0C65E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
+</Tables>
+<ForeignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B053F84B-48DC-883A-5CA1-DECD44C55B82" containerWithKeyObject="03FC974C-3792-776F-6732-35EF12A1B747" localFKIndex="5EF213DE-3DF4-E536-51B0-3A78A1E3E0D5" name="ATT_ADDRESS_ATT_REGION_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:51:36 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_REGION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C7DF8292-6B38-4942-A898-A2351B9E2C9D</referredTableID>
+<keyObject>ADBB95F7-A15C-1390-BACA-D9CA585BC7F4</keyObject>
+<referredKeyID>ADBB95F7-A15C-1390-BACA-D9CA585BC7F4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7B8E45FB-D777-A688-6F9F-7A2B3C22CDAE" containerWithKeyObject="97214A04-FC47-6B23-63EB-EABA4B991967" localFKIndex="E2FDE192-7290-9CF5-777D-8CE016ED749C" name="ATT_CART_ATT_MENU_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:25:00 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_MENU</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C966BAB6-CBFD-2BB8-38DF-27565041E798</referredTableID>
+<keyObject>AF8BD119-EAE6-D11E-CBCA-C4FA4E3CB037</keyObject>
+<referredKeyID>AF8BD119-EAE6-D11E-CBCA-C4FA4E3CB037</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1F0970F-CCAE-08FD-8E61-6D98F77CBF09" containerWithKeyObject="76680BD0-6065-8B72-EE26-8E3D15FD5027" localFKIndex="87DEFA47-A97F-BD5F-D85B-145CC5EDC5E3" name="ATT_FEEDBACK_ATT_RSTRNT_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:54:59 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_RSTRNT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA0A3B50-1AF5-4930-84BC-D15413EDBE51</referredTableID>
+<keyObject>2AF9E3A8-707F-610D-A6C1-1A637D0E8753</keyObject>
+<referredKeyID>2AF9E3A8-707F-610D-A6C1-1A637D0E8753</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B2978166-3F34-9346-4948-9583870E1BCE" containerWithKeyObject="76680BD0-6065-8B72-EE26-8E3D15FD5027" localFKIndex="DCC28B8A-CF09-E4A3-1F5E-B0A70F2F1DC4" name="ATT_FEEDBACK_ATT_USER_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:55:07 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_USER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3C35B3A6-D06C-E0A4-EFC6-FF015A1E1321</referredTableID>
+<keyObject>BB9C2489-3704-72A0-DAD1-25A37CD55330</keyObject>
+<referredKeyID>BB9C2489-3704-72A0-DAD1-25A37CD55330</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="67107FEB-0EA9-6DEF-8E8F-DA26237B325A" containerWithKeyObject="C966BAB6-CBFD-2BB8-38DF-27565041E798" localFKIndex="77240D53-2519-92D7-DBD7-477D6A430C36" name="ATT_MENU_ATT_RSTRNT_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:51:58 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_RSTRNT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DA0A3B50-1AF5-4930-84BC-D15413EDBE51</referredTableID>
+<keyObject>2AF9E3A8-707F-610D-A6C1-1A637D0E8753</keyObject>
+<referredKeyID>2AF9E3A8-707F-610D-A6C1-1A637D0E8753</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9F4220B6-004E-205E-B38F-C78D59AAF59D" containerWithKeyObject="1A385E79-E6BA-F266-43F8-7A47A707C002" localFKIndex="55186BD3-76C3-9C5A-1EB7-EDC83059AEEA" name="ATT_ORDER_ADDRESS_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:03:12 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_ADDRESS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>03FC974C-3792-776F-6732-35EF12A1B747</referredTableID>
+<keyObject>B715AB16-70B5-06DE-4815-3E57EB39DE43</keyObject>
+<referredKeyID>B715AB16-70B5-06DE-4815-3E57EB39DE43</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BBF07D75-5682-0C87-C05D-066B07FD5D3E" containerWithKeyObject="1A385E79-E6BA-F266-43F8-7A47A707C002" localFKIndex="E4A1A8E5-C94E-0ACB-760A-7547876B8F1D" name="ATT_ORDER_ATT_CART_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:47:00 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_CART</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97214A04-FC47-6B23-63EB-EABA4B991967</referredTableID>
+<keyObject>11A52FC0-05D3-C1C2-0EE0-462AE65954C0</keyObject>
+<referredKeyID>11A52FC0-05D3-C1C2-0EE0-462AE65954C0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18047D4F-8F4F-09E2-268D-C9C7EC61F6B0" containerWithKeyObject="1A385E79-E6BA-F266-43F8-7A47A707C002" localFKIndex="8BC1F528-3CB2-7B3E-DCC0-343FBB533C62" name="ATT_ORDER_ATT_CLIENT_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:44:29 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_UNAUTHORISED_CLIENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5347E2DC-F369-CC2C-5A53-6546B8F09F9A</referredTableID>
+<keyObject>89A86024-966D-763C-5B00-5E154488A734</keyObject>
+<referredKeyID>89A86024-966D-763C-5B00-5E154488A734</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97C2B0C6-0801-73D4-1E9B-D4F0C081A6CD" containerWithKeyObject="1A385E79-E6BA-F266-43F8-7A47A707C002" localFKIndex="46816532-1DC7-19A0-2F10-9DAF7275D15E" name="ATT_ORDER_ATT_ORDER_STATUS_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:45:49 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_ORDER_STATUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>54230FB0-7874-9357-0AD2-87F820D18720</referredTableID>
+<keyObject>E6D14631-D80F-810A-D496-021762F04F48</keyObject>
+<referredKeyID>E6D14631-D80F-810A-D496-021762F04F48</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B48DF584-24E0-232B-3DD7-486C8F1B7BB4" containerWithKeyObject="C7DF8292-6B38-4942-A898-A2351B9E2C9D" localFKIndex="DB41986A-CBE3-C078-D159-81BEE6AC219D" name="ATT_REGION_ATT_CITY_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 15:52:14 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_CITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>89CC644D-198C-C505-D66F-0E3F36E3A54D</referredTableID>
+<keyObject>C510711F-E3EE-DDAF-72CC-BD9FCF8489FC</keyObject>
+<referredKeyID>C510711F-E3EE-DDAF-72CC-BD9FCF8489FC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="841C41F8-58DC-B01A-8B67-DC70BA0F294B" containerWithKeyObject="DA0A3B50-1AF5-4930-84BC-D15413EDBE51" localFKIndex="C77C2A97-AFBF-4B52-CF98-3DE56F964F3B" name="ATT_RSTRNT_ATT_REST_CATEGORY_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:49:50 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_REST_CATEGORY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0DE0901E-A723-4EEA-163F-A9CEE62EF845</referredTableID>
+<keyObject>72AC98DC-FC8F-A96C-DE9B-07C7B909B85A</keyObject>
+<referredKeyID>72AC98DC-FC8F-A96C-DE9B-07C7B909B85A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4B83984C-FF27-1378-7CAE-00E713179B53" containerWithKeyObject="3C35B3A6-D06C-E0A4-EFC6-FF015A1E1321" localFKIndex="21FD20F2-9F45-D8A3-F5E0-78CFFA00FD5D" name="ATT_USER_ATT_ROLE_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-10 15:45:01 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_ROLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BF63064A-F04D-A053-B0C0-5E535304F803</referredTableID>
+<keyObject>0E129D78-3D2D-428F-4FB0-2321CE77064D</keyObject>
+<referredKeyID>0E129D78-3D2D-428F-4FB0-2321CE77064D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D67AB74C-B313-FDFC-68BA-73E2AF2A506D" containerWithKeyObject="89CC644D-198C-C505-D66F-0E3F36E3A54D" localFKIndex="1FEDDBDF-942B-A8C7-368E-C77E582CC0F7" name="CITY_COUNTRY_FK">
+<createdBy>HOME-PC</createdBy>
+<createdTime>2018-10-11 14:54:45 UTC</createdTime>
+<ownerDesignName>DB_MODEL</ownerDesignName>
+<referredTableLongName>ATT_COUNTRY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>29C42F4C-9E51-AF3D-8F00-0BAED9B85A60</referredTableID>
+<keyObject>CC72D916-73CD-EA2E-5F8F-DB8862E0778C</keyObject>
+<referredKeyID>CC72D916-73CD-EA2E-5F8F-DB8862E0778C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
+</ForeignKeys>
+<mainView class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1">
+<createdBy>HOME-PC</createdBy>
+<modifiedBy>HOME-PC</modifiedBy>
+<createdTime>2018-10-09 21:22:08 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="03FC974C-3792-776F-6732-35EF12A1B747" otype="Table" vid="DA7FDA0B-4D1D-5E38-BA8D-AC65B5B57BC0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="774" y="249" width="173" height="168"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0DE0901E-A723-4EEA-163F-A9CEE62EF845" otype="Table" vid="C266E715-2C13-F839-13AA-FACD985B4B41">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="334" y="39" width="264" height="141"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1A385E79-E6BA-F266-43F8-7A47A707C002" otype="Table" vid="01CA4905-BC93-D3F9-E7A1-FECCF80AC0C4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1020" y="530" width="294" height="241"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="29C42F4C-9E51-AF3D-8F00-0BAED9B85A60" otype="Table" vid="00BA9E9A-52E9-2D20-002B-9EAA313262D5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1082" y="147" width="228" height="143"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3C35B3A6-D06C-E0A4-EFC6-FF015A1E1321" otype="Table" vid="B292B6E8-6E0F-C434-CC4D-C46B002783FF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="41" y="57" width="215" height="186"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="5347E2DC-F369-CC2C-5A53-6546B8F09F9A" otype="Table" vid="699302B1-7DEE-EC10-DC34-FD3ABB4E166F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="574" y="430" width="193" height="160"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="54230FB0-7874-9357-0AD2-87F820D18720" otype="Table" vid="73358E7C-6497-8E9C-4935-EE5E97B59F26">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="528" y="625" width="190" height="136"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="76680BD0-6065-8B72-EE26-8E3D15FD5027" otype="Table" vid="3B40C95C-43AD-51D8-69E1-7886750592DD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="327" y="239" width="229" height="212"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="89CC644D-198C-C505-D66F-0E3F36E3A54D" otype="Table" vid="695C3653-2DAC-2336-5DAA-DEBDE60C6B7A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1299" y="336" width="204" height="165"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="97214A04-FC47-6B23-63EB-EABA4B991967" otype="Table" vid="AB6FC653-2897-0528-800D-7A711A9D234E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1401" y="545" width="281" height="177"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BF63064A-F04D-A053-B0C0-5E535304F803" otype="Table" vid="E2742FAD-3345-8A4E-4B1E-F352C9F2531A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="67" y="293" width="210" height="135"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C7DF8292-6B38-4942-A898-A2351B9E2C9D" otype="Table" vid="FE402637-81D4-278C-9F04-49C75AF6E593">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1031" y="318" width="221" height="172"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="C966BAB6-CBFD-2BB8-38DF-27565041E798" otype="Table" vid="09AFEF56-D97E-1887-E142-FBC02CEBA8F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1338" y="4" width="293" height="201"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="DA0A3B50-1AF5-4930-84BC-D15413EDBE51" otype="Table" vid="0774A144-9D22-4F7D-05FF-95F5ABA08911">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="691" y="33" width="246" height="160"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="18047D4F-8F4F-09E2-268D-C9C7EC61F6B0" otype="FKIndexAssociation" vid_source="699302B1-7DEE-EC10-DC34-FD3ABB4E166F" vid_target="01CA4905-BC93-D3F9-E7A1-FECCF80AC0C4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="767" y="560"/>
+<point x="1020" y="560"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4B83984C-FF27-1378-7CAE-00E713179B53" otype="FKIndexAssociation" vid_source="E2742FAD-3345-8A4E-4B1E-F352C9F2531A" vid_target="B292B6E8-6E0F-C434-CC4D-C46B002783FF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="161" y="293"/>
+<point x="161" y="243"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="67107FEB-0EA9-6DEF-8E8F-DA26237B325A" otype="FKIndexAssociation" vid_source="0774A144-9D22-4F7D-05FF-95F5ABA08911" vid_target="09AFEF56-D97E-1887-E142-FBC02CEBA8F2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="937" y="113"/>
+<point x="1338" y="113"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7B8E45FB-D777-A688-6F9F-7A2B3C22CDAE" otype="FKIndexAssociation" vid_source="09AFEF56-D97E-1887-E142-FBC02CEBA8F2" vid_target="AB6FC653-2897-0528-800D-7A711A9D234E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1516" y="205"/>
+<point x="1516" y="545"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="841C41F8-58DC-B01A-8B67-DC70BA0F294B" otype="FKIndexAssociation" vid_source="C266E715-2C13-F839-13AA-FACD985B4B41" vid_target="0774A144-9D22-4F7D-05FF-95F5ABA08911">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="598" y="109"/>
+<point x="691" y="109"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="97C2B0C6-0801-73D4-1E9B-D4F0C081A6CD" otype="FKIndexAssociation" vid_source="73358E7C-6497-8E9C-4935-EE5E97B59F26" vid_target="01CA4905-BC93-D3F9-E7A1-FECCF80AC0C4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="718" y="693"/>
+<point x="1020" y="693"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="9F4220B6-004E-205E-B38F-C78D59AAF59D" otype="FKIndexAssociation" vid_source="DA7FDA0B-4D1D-5E38-BA8D-AC65B5B57BC0" vid_target="01CA4905-BC93-D3F9-E7A1-FECCF80AC0C4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="941" y="417"/>
+<point x="1050" y="530"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A1F0970F-CCAE-08FD-8E61-6D98F77CBF09" otype="FKIndexAssociation" vid_source="0774A144-9D22-4F7D-05FF-95F5ABA08911" vid_target="3B40C95C-43AD-51D8-69E1-7886750592DD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="691" y="189"/>
+<point x="556" y="273"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B053F84B-48DC-883A-5CA1-DECD44C55B82" otype="FKIndexAssociation" vid_source="FE402637-81D4-278C-9F04-49C75AF6E593" vid_target="DA7FDA0B-4D1D-5E38-BA8D-AC65B5B57BC0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1031" y="352"/>
+<point x="947" y="352"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B2978166-3F34-9346-4948-9583870E1BCE" otype="FKIndexAssociation" vid_source="B292B6E8-6E0F-C434-CC4D-C46B002783FF" vid_target="3B40C95C-43AD-51D8-69E1-7886750592DD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="256" y="241"/>
+<point x="327" y="241"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="B48DF584-24E0-232B-3DD7-486C8F1B7BB4" otype="FKIndexAssociation" vid_source="695C3653-2DAC-2336-5DAA-DEBDE60C6B7A" vid_target="FE402637-81D4-278C-9F04-49C75AF6E593">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1299" y="413"/>
+<point x="1252" y="413"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="BBF07D75-5682-0C87-C05D-066B07FD5D3E" otype="FKIndexAssociation" vid_source="AB6FC653-2897-0528-800D-7A711A9D234E" vid_target="01CA4905-BC93-D3F9-E7A1-FECCF80AC0C4">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1401" y="633"/>
+<point x="1314" y="633"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="D67AB74C-B313-FDFC-68BA-73E2AF2A506D" otype="FKIndexAssociation" vid_source="00BA9E9A-52E9-2D20-002B-9EAA313262D5" vid_target="695C3653-2DAC-2336-5DAA-DEBDE60C6B7A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1304" y="290"/>
+<point x="1304" y="336"/>
+</points>
+</Connector>
+</connectors>
+</mainView>
+</relationalModel>

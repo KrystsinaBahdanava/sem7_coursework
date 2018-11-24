@@ -79,11 +79,9 @@ ALTER TABLE att_country MODIFY (END_DATE DEFAULT '31-DEC-9999');
 
 CREATE TABLE att_feedback (
     be_id        NUMBER NOT NULL,
-    be_name      VARCHAR2(200)
-   ,
+    be_name      VARCHAR2(200),
     mark         NUMBER,
-    "COMMENT"    VARCHAR2(200)
-   ,
+    "COMMENT"    VARCHAR2(200),
     user_oid     NUMBER NOT NULL,
     rstrnt_oid   NUMBER NOT NULL,
     is_active    NUMBER,
@@ -92,15 +90,14 @@ CREATE TABLE att_feedback (
 );
 
 ALTER TABLE att_feedback ADD CONSTRAINT att_mark_pk PRIMARY KEY ( be_id );
+ALTER TABLE att_feedback MODIFY (START_DATE DEFAULT '01-DEC-1900');
+ALTER TABLE att_feedback MODIFY (END_DATE DEFAULT '31-DEC-9999');
 
 CREATE TABLE att_menu (
     be_id        NUMBER NOT NULL,
-    be_name      VARCHAR2(200)
-   ,
-    dish_name    VARCHAR2 (200)
-   ,
-    dish_desc    VARCHAR2 (200)
-   ,
+    be_name      VARCHAR2(200),
+    dish_name    VARCHAR2 (200),
+    dish_desc    VARCHAR2 (200),
     price        NUMBER,
     dish_pic     BLOB,
     rstrnt_oid   NUMBER NOT NULL,
@@ -183,10 +180,8 @@ ALTER TABLE att_role ADD CONSTRAINT att_role_pk PRIMARY KEY ( be_id );
 
 CREATE TABLE att_rstrnt (
     be_id          NUMBER NOT NULL,
-    be_name        VARCHAR2(200)
-   ,
-    rstrnt_name    VARCHAR2(200)
-   ,
+    be_name        VARCHAR2(200),
+    rstrnt_name    VARCHAR2(200),
     is_active      NUMBER,
     start_date     DATE,
     end_date       DATE,
@@ -194,12 +189,13 @@ CREATE TABLE att_rstrnt (
 );
 
 ALTER TABLE att_rstrnt ADD CONSTRAINT att_rstrnt_pk PRIMARY KEY ( be_id );
-ALTER TABLE att_rstrnt ADD LOGO BLOB;
+ALTER TABLE att_rstrnt ADD LOGO varchar2(255);
 ALTER TABLE att_rstrnt ADD SCHEDULE varchar2(20);
 
 ALTER TABLE att_rstrnt MODIFY (IS_ACTIVE DEFAULT 1);
 ALTER TABLE att_rstrnt MODIFY (START_DATE DEFAULT '01-DEC-1900');
 ALTER TABLE att_rstrnt MODIFY (END_DATE DEFAULT '31-DEC-9999');
+ALTER TABLE att_rstrnt MODIFY (LOGO varchar2(255));
 
 CREATE TABLE att_unauthorised_client (
     be_id        NUMBER NOT NULL,
@@ -291,5 +287,6 @@ ALTER TABLE att_user
 ALTER TABLE att_city
     ADD CONSTRAINT city_country_fk FOREIGN KEY ( country_oid )
         REFERENCES att_country ( be_id );
+
 
 

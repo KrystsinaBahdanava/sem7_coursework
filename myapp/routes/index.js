@@ -8,6 +8,10 @@ var oracledb = require('oracledb');
 router.get('/', function(req, res, next) {
   res.render('index.html', { title: 'Express' });
 });
+
+var app = express();
+
+
 /*
 let sql, binds, options, result;
 

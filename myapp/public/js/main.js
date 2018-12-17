@@ -1,3 +1,4 @@
+
 var test = 0;
 
 
@@ -61,40 +62,11 @@ function onError() {
 function onSortRest() {
     var searchRest;
     searchRest = $("#searchRestTxt").val();
-    
     $.get("http://localhost:3000/searchrest", {
         searchRest: searchRest
     }, function (data) {
         location.reload();
     });
-    /*
-    var response = '';
-    response = this.responseText;
-    // var elem = document.getElementById('rest');
-    //elem.remove(elem);
-    alert(response);
-    var parsedResponse = JSON.parse(response);
-    // access your data newly received data here and update your DOM with appendChild(), findElementById(), etc...
-    var restaurant = parsedResponse.restaurant;
-    var schedule = parsedResponse.sched;
-    var mark = parsedResponse.mark;
-    var logo = parsedResponse.logo;
-    var category = parsedResponse.cat;
-    restaurant.forEach(function (item, i, restaurant) {
-        var newLi = document.createElement('li');
-        newLi.id = 'rest';
-        newLi.innerHTML = '<a href="#"><img src="' + logo[i] + '" alt="" /></a>' +
-            '<div class="product-info">' +
-            '<h3 id="restName" class="restName">' + restaurant[i] + '</h3>' +
-            '<div class="product-desc">' +
-            '<h4>' + category[i] + '</h4>' +
-            '<p>' + schedule[i] + '<br /></p>' +
-            '<strong class="price">Рейтинг: ' + Math.round(mark[i] * 100) / 100 + '</strong>' +
-            '</div>' +
-            '</div>';
-        li_rest.insertBefore(newLi, li_rest.children[i]);
-
-});*/
 };
 
 /*

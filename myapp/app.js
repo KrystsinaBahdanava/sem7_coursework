@@ -32,7 +32,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/searchrest', function (req, res) {
-    console.log(req.query.user);
+    console.log(req.query.searchRest);
     oracledb.getConnection({
             user: "delivery",
             password: "delivery",

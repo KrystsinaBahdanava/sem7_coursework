@@ -1,0 +1,72 @@
+{% extends "layout.twig" %}
+{% set page = 'home' %}
+
+{% block content %}
+    <!-- Content -->
+    <div id="content">
+        <!-- Content Slider -->
+        <div id="slider" class="box">
+            <div id="slider-holder">
+                <ul>
+                    <li><a href="#"><img src="/images/slide3.jpg" alt="" height="260px" width="730px"/></a></li>
+                    <li><a href="#"><img src="/images/slide2.jpg" alt="" height="260px" width="710px"/></a></li>
+                    <li><a href="#"><img src="/images/slide1.jpg" alt="" height="265px" style="background-size:contain;"/></a></li>
+                    <li><a href="#"><img src="/images/slide4.jpg" alt="" height="260px" width="710px"/></a></li>
+                </ul>
+            </div>
+
+            <div id="slider-nav">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+            </div>
+        </div>
+        <!-- End Content Slider -->
+
+        <!-- Products -->
+        {% raw %}
+            <div class="products">
+                <div class="cl">&nbsp;</div>
+                <ul id="li_rest" class="li_rest">
+                    <!--List of restaurants is appended by js here-->
+
+                    <li v-for="restaurant in restaurants.items" v-cloak>
+                        <a :href="'/restaurant/' + restaurant.id">
+                            <img :src="restaurant.image" :alt="restaurant.name"/>
+                        </a>
+
+                        <div class="product-info">
+                            <h3 id="restName" class="restName">{{ restaurant.name }}</h3>
+                            <div class="product-desc">
+                                <h4>{{ restaurant.category }}</h4>
+                                <p>{{ restaurant.schedule }}<br/></p>
+                                <strong class="price">Рейтинг: {{ restaurant.average_rating }}</strong>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="rest-alert" v-if="!restaurants.items.length">По вашему запросу ничего не найдено!</p>
+
+                <div class="cl">&nbsp;</div>
+            </div>
+
+            <div class="box" style="margin-top: 15px;" v-if="restaurants.pages > 1">
+                <ul class="pagination">
+                    <li v-for="i in restaurants.pages">
+                        <a href="javascript:;" @click="filterRestaurants('page', i)">{{ i }}</a>
+                    </li>
+                </ul>
+            </div>
+        {% endraw %}
+        <!-- End Products -->
+    </div>
+    <!-- End Content -->
+
+    <!-- Sidebar -->
+    {% include "_partials/sidebar.twig" %}
+    <!-- End Sidebar -->
+
+    <div class="cl">&nbsp;</div>
+{% endblock %}

@@ -1,0 +1,106 @@
+{% extends "layout.twig" %}
+{% set page = 'restaurant' %}
+
+{% block content %}
+    <div class="content">
+        <h1>Ресторан: {{ restaurant.name }}</h1>
+        <hr style="margin: 15px 0">
+        <h2 style="margin-bottom: 15px;">Блюда:</h2>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 25px;" class="text-center">#</th>
+                    <th style="width: 70px;" class="text-center">Фото</th>
+                    <th class="text-center">Название</th>
+                    <th>Описание</th>
+                    <th>Цена</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% set i = 1 %}
+                {% for dish in restaurant.dishes %}
+                    <tr>
+                        <td class="text-center">{{ i }}</td>
+                        <td class="text-center">
+                            <img src="{{ dish.image }}" style="width: 100%;" alt="Image" class="center-block">
+                        </td>
+                        <td class="text-center">{{ dish.name }}</td>
+                        <td>{{ dish.description }}</td>
+                        <td>{{ dish.price | number_format(2, '.', '') }}</td>
+                        <td v-cloak>
+                            <button type="button" class="btn btn-danger btn-xs" v-if="isInCart({{ dish.id }})" @click="removeFromCart({{ dish.id }})">
+                                Удалить из корзины
+                            </button>
+
+                            <button type="button" class="btn btn-success btn-xs" v-else @click="addToCart({{ dish.id }})">
+                                Добавить в корзину
+                            </button>
+                        </td>
+                    </tr>
+                    {% set i = i + 1 %}
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <form class="panel panel-default" method="POST">
+            <div class="panel-heading">Добавить отзыв </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" name="name" class="form-control" id="name" v-model="restaurantCommentForm.name">
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Комментарий:</label>
+                    <textarea name="comment" id="comment" class="form-control" v-model="restaurantCommentForm.comment"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="rate">Оценка:</label>
+                    <select name="rate" id="rate" class="form-control" v-model.number="restaurantCommentForm.rate">
+                        <option value=""></option>
+                        <option :value="i" v-for="i in 10" v-text="i"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="panel-footer text-right">
+                <button type="submit" class="btn btn-success" :disabled="!canLeaveComment">Довавить</button>
+            </div>
+        </form>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Отзывы ресторана</div>
+            <div class="panel-body">
+                {% if restaurant.feedbacks.length == 0 %}
+                    <div class="alert alert-info" style="margin-bottom: 0;">Нет ни одного отзыва</div>
+                {% else %}
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Имя</th>
+                                <th>Комментарий</th>
+                                <th>Оценка</th>
+                                <th>Добавлено</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for feedback in restaurant.feedbacks %}
+                                <tr>
+                                    <td>{{ feedback.first_name }}</td>
+                                    <td>{{ feedback.comment }}</td>
+                                    <td>{{ feedback.rate }}</td>
+                                    <td>{{ feedback.created_at | date }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

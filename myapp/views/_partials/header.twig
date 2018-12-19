@@ -1,0 +1,28 @@
+<div id="header">
+    <h1 id="logo">
+        <a href="/">foodpanda</a>
+    </h1>
+    <div id="title">foodpanda</div>
+    <!-- Cart -->
+    {% raw %}
+        <div id="cart" v-cloak>
+            <a href="/cart" class="cart-link">Моя корзина</a>
+            <div class="cl">&nbsp;</div>
+            <span>Блюд: <strong>{{ totalCartItems }}</strong></span>
+            <span>&nbsp;&nbsp;</span>
+            <span>Цена: <strong>{{ totalCartSum }}</strong></span>
+        </div>
+    {% endraw %}
+    <!-- End Cart -->
+
+    <!-- Navigation -->
+    <div id="navigation">
+        <ul>
+            <li><a href="/" {% if page == 'home' %}class="active"{% endif %}>Главная</a></li>
+            <li><a href="/order" {% if page == 'order' %}class="active"{% endif %}>Как оформить заказ</a></li>
+            <li><a href="/news" {% if page == 'news' %}class="active"{% endif %}>Новости</a></li>
+            <li><a href="/contacts" {% if page == 'contacts' %}class="active"{% endif %}>Контакты</a></li>
+        </ul>
+    </div>
+    <!-- End Navigation -->
+</div>

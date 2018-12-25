@@ -1,0 +1,33 @@
+﻿<XtraSerializer version="18.1.5.0">
+  <Items>
+    <Item1 ItemKind="DiagramRoot" Theme="NoTheme" SelectedStencils="BasicShapes, BasicFlowchartShapes">
+      <Children>
+        <Item1 Position="420,130" Size="100,75" Shape="BasicShapes.Ellipse" Content="Начало" ItemKind="DiagramShape" />
+        <Item2 Position="420,230" Size="100,75" Shape="BasicShapes.Rectangle" Content="Вход на сайт" ItemKind="DiagramShape" />
+        <Item3 Position="420,330" Size="100,75" Shape="BasicShapes.Rectangle" Content="Просмотр главной страницы" ItemKind="DiagramShape" />
+        <Item4 Position="420,430" Size="100,75" Shape="BasicShapes.Rectangle" Content="Поиск нужной категории кухни" ItemKind="DiagramShape" />
+        <Item5 Position="420,530" Size="100,75" Shape="BasicShapes.Diamond" Content="Нужная категория найдена" ItemKind="DiagramShape" />
+        <Item6 Position="330,620" Size="100,75" Shape="BasicShapes.Rectangle" Content="Просмотр ресторанов выбранной категории" ItemKind="DiagramShape" />
+        <Item7 Position="510,620" Size="100,75" Shape="BasicShapes.Rectangle" Content="Выход из сайта" ItemKind="DiagramShape" />
+        <Item8 Position="330,720" Size="100,75" Shape="BasicShapes.Diamond" Content="Ресторан&#xD;&#xA;найден" ItemKind="DiagramShape" />
+        <Item9 Position="240,820" Size="100,75" Shape="BasicShapes.Rectangle" Content="Добавление блюд в корзину" ItemKind="DiagramShape" />
+        <Item10 Position="420,820" Size="100,75" Shape="BasicShapes.Rectangle" Content="Выход из сайта" ItemKind="DiagramShape" />
+        <Item11 Position="240,920" Size="100,75" Shape="BasicShapes.Rectangle" Content="Оформление заказа" ItemKind="DiagramShape" />
+        <Item12 Position="420,1030" Size="100,75" Shape="BasicShapes.Ellipse" Content="Конец" ItemKind="DiagramShape" />
+        <Item13 BeginItemPointIndex="2" EndItemPointIndex="0" Points="(Empty)" ItemKind="DiagramConnector" BeginItem="0" EndItem="1" BeginPoint="470,205" EndPoint="470,230" />
+        <Item14 BeginItemPointIndex="2" EndItemPointIndex="-1" Points="(Empty)" ItemKind="DiagramConnector" BeginItem="1" EndItem="2" BeginPoint="470,305" EndPoint="470,330" />
+        <Item15 BeginItemPointIndex="2" EndItemPointIndex="0" Points="(Empty)" ItemKind="DiagramConnector" BeginItem="2" EndItem="3" BeginPoint="470,405" EndPoint="470,430" />
+        <Item16 BeginItemPointIndex="2" EndItemPointIndex="0" Points="(Empty)" ItemKind="DiagramConnector" BeginItem="3" EndItem="4" BeginPoint="470,505" EndPoint="470,530" />
+        <Item17 BeginItemPointIndex="3" EndItemPointIndex="-1" Points="380,567.5" Content="Да" ItemKind="DiagramConnector" BeginItem="4" EndItem="5" BeginPoint="420,567.5" EndPoint="380,620" />
+        <Item18 BeginItemPointIndex="1" EndItemPointIndex="0" Points="560,567.5" Content="Нет" ItemKind="DiagramConnector" BeginItem="4" EndItem="6" BeginPoint="520,567.5" EndPoint="560,620" />
+        <Item19 BeginItemPointIndex="2" EndItemPointIndex="0" Points="(Empty)" ItemKind="DiagramConnector" BeginItem="5" EndItem="7" BeginPoint="380,695" EndPoint="380,720" />
+        <Item20 BeginItemPointIndex="3" EndItemPointIndex="0" Points="290,757.5" Content="Да" ItemKind="DiagramConnector" BeginItem="7" EndItem="8" BeginPoint="330,757.5" EndPoint="290,820" />
+        <Item21 BeginItemPointIndex="1" EndItemPointIndex="0" Points="470,757.5" Content="Нет" ItemKind="DiagramConnector" BeginItem="7" EndItem="9" BeginPoint="430,757.5" EndPoint="470,820" />
+        <Item22 BeginItemPointIndex="2" EndItemPointIndex="0" Points="(Empty)" ItemKind="DiagramConnector" BeginItem="8" EndItem="10" BeginPoint="290,895" EndPoint="290,920" />
+        <Item23 BeginItemPointIndex="2" EndItemPointIndex="0" Points="290,1013 470,1013" ItemKind="DiagramConnector" BeginItem="10" EndItem="11" BeginPoint="290,995" EndPoint="470,1030" />
+        <Item24 BeginItemPointIndex="2" EndItemPointIndex="0" Points="(Empty)" ItemKind="DiagramConnector" BeginItem="9" EndItem="11" BeginPoint="470,895" EndPoint="470,1030" />
+        <Item25 BeginItemPointIndex="2" EndItemPointIndex="-1" Points="560,1013 470,1013" ItemKind="DiagramConnector" BeginItem="6" EndItem="11" BeginPoint="560,695" EndPoint="470,1030" />
+      </Children>
+    </Item1>
+  </Items>
+</XtraSerializer>

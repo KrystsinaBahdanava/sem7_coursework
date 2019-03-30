@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="440F6F51-E85F-DAEB-DE70-EE67D8EB8A3E" name="Restaurant Feedbacks">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:23:47 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="restaurant_id" id="D2B82CDE-575D-AA90-E5BE-8DF982384A59">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:34:18 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_name" id="F8D88718-9064-393B-1BF5-975F1869BCD1">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:34:26 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comment" id="79BB68BF-42FC-5AE8-1B5C-107E76EDC969">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:34:43 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_created" id="ED8E4484-24B0-74AA-E219-1910124949EC">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:34:51 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="0958BA78-5215-9C71-D18A-3385DB05DD0F">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:59 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B509F1DC-BC78-EEAA-025F-149580EFD8F3" name="Restaurant Feedbacks PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:37:53 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0958BA78-5215-9C71-D18A-3385DB05DD0F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

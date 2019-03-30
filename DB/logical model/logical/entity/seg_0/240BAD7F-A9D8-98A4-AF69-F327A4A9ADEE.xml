@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="240BAD7F-A9D8-98A4-AF69-F327A4A9ADEE" name="Order">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:42:04 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="A4382493-6B18-85F3-8E98-624BC7265BC3">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:45:21 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_id" id="1451E822-3540-930A-4093-5BEC8A19DBEB">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:45:22 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="client_id" id="E1672F20-04B6-C557-A8FD-28B60DDE6F3D">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:45:32 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address_id" id="79226875-3DF9-CD54-4853-5ACAFE62358D">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:45:35 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="9E58B6D6-1FAD-BDFE-7B28-E93B744F9599">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:51:09 UTC</createdTime>
+<generatorID>B44C2332-BB5B-4939-720A-F342E263B125</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>829EBB9D-9BA6-062C-80E0-4E446F6F4D95</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="FDB68F28-0236-7E07-9F65-86E2BD432A06">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:54:03 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="BC52F82B-74D3-0641-0ABD-7061E3598C3C">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:54:06 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4FA149A2-A808-2CBE-9B90-EC9251BF7011" name="Order PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:46:34 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A4382493-6B18-85F3-8E98-624BC7265BC3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

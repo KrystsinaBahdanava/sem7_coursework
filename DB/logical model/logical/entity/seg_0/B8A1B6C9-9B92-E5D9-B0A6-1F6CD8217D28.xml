@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B8A1B6C9-9B92-E5D9-B0A6-1F6CD8217D28" name="Restaurant">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:23:13 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="77C69A03-43AF-50B5-946D-0C294CD307A0">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:24:51 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="41895A97-BF26-1D20-20D2-7F2C0ABDB1B8">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:24:57 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="schedule" id="B211F508-5B37-F32F-30B9-462022D7AE4D">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:24:59 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="avg_rating" id="76FCB3DF-E63C-17F2-0D62-74C1A9E7BCFD">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:25:03 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="category_id" id="79489B31-183F-A205-B67C-73A20DD74F23">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:25:08 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="image" id="B4D83CB8-C65D-A88C-EB9C-8121776873C8">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:31:53 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="5D753712-9ED7-1DC2-C8AE-DA47E1B169ED">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:38:05 UTC</createdTime>
+<generatorID>92825B9D-C1A3-E2D6-FD4B-7164AAC5D94C</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>13C0CE2E-EFB8-999F-8BF9-4F48282EDA52</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="17976E4A-9492-7873-17B3-30494DE88E1A">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:38:49 UTC</createdTime>
+<generatorID>84E15E9C-EE9F-7F91-DB4D-3DFE3747A215</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>0958BA78-5215-9C71-D18A-3385DB05DD0F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="99ED4AEE-8147-766C-1195-4304AE6A987C">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:40:59 UTC</createdTime>
+<generatorID>A41F683B-D3F6-1B90-922C-FD4FF2178DE1</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>DB9D9268-C81F-3B1D-3A6C-B9AEFE2F75A3</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D3D37F47-F4ED-D2E0-05CB-FBD8BB929236" name="Restaurant PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:37:32 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>77C69A03-43AF-50B5-946D-0C294CD307A0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

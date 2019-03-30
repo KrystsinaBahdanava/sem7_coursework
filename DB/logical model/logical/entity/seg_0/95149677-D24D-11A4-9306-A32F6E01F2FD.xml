@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="95149677-D24D-11A4-9306-A32F6E01F2FD" name="Restaurant History">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:24:15 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="restaurant_id" id="25ABD1B1-BF18-D559-A8CC-ABE2A222E78F">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:09 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="average_tating" id="8D460D57-B024-39A2-2D0B-8C529E8F0C35">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:13 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="scd_start" id="FF5E8DDA-51E0-2699-7C2F-2AE67955D26C">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:34 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="scd_end" id="FACA1283-1F57-90DA-ECF4-E469F4C14245">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:41 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="scd_version" id="04B9DDF7-956B-671D-9607-9E98CB4FB284">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:43 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="scd_active" id="30CEB4D7-838B-04F0-99DD-649819325928">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:48 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="DB9D9268-C81F-3B1D-3A6C-B9AEFE2F75A3">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:36:52 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="219D299E-9147-3E7E-E472-EBAE8D2AF97A" name="Restaurant History PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:37:57 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB9D9268-C81F-3B1D-3A6C-B9AEFE2F75A3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

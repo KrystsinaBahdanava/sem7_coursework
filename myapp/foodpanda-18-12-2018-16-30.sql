@@ -27,7 +27,7 @@ DROP TABLE IF EXISTS `cart_items`;
 
 CREATE TABLE `cart_items` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `session_id` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `session_id` varchar(179) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `product_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
@@ -44,8 +44,8 @@ DROP TABLE IF EXISTS `categories`;
 
 CREATE TABLE `categories` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `title` varchar(179) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -103,7 +103,7 @@ CREATE TABLE `order_items` (
   `order_id` int(11) unsigned NOT NULL,
   `product_id` int(11) unsigned NOT NULL,
   `quantity` int(11) unsigned NOT NULL DEFAULT '1',
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `order_items_order_id_foreign` (`order_id`),
   KEY `order_items_product_foreign` (`product_id`),
@@ -126,7 +126,7 @@ CREATE TABLE `orders` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `total_price` double(8,2) unsigned NOT NULL DEFAULT '0.00',
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -140,10 +140,10 @@ DROP TABLE IF EXISTS `restaurant_dishes`;
 CREATE TABLE `restaurant_dishes` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `restaurant_id` int(11) unsigned NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(179) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `description` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `price` double(8,2) unsigned NOT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT '',
+  `image` varchar(179) COLLATE utf8mb4_unicode_ci DEFAULT '',
   `is_active` tinyint(1) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -169,10 +169,10 @@ DROP TABLE IF EXISTS `restaurant_feedbacks`;
 CREATE TABLE `restaurant_feedbacks` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `restaurant_id` int(11) unsigned NOT NULL,
-  `first_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `first_name` varchar(179) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `rate` tinyint(2) unsigned NOT NULL,
   `comment` text COLLATE utf8mb4_unicode_ci,
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `restaurant_feedbacks_restaurant_foreign` (`restaurant_id`),
   CONSTRAINT `restaurant_feedbacks_restaurant_foreign` FOREIGN KEY (`restaurant_id`) REFERENCES `restaurants` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
@@ -188,10 +188,10 @@ DROP TABLE IF EXISTS `restaurants`;
 CREATE TABLE `restaurants` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `category_id` int(11) unsigned DEFAULT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(179) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `is_active` tinyint(1) NOT NULL DEFAULT '1',
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `schedule` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(179) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `schedule` varchar(179) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `average_rating` double(8,2) NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`id`),
   KEY `restaurants_category_id_foreign` (`category_id`),

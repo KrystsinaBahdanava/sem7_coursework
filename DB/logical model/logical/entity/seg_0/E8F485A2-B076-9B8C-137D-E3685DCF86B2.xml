@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E8F485A2-B076-9B8C-137D-E3685DCF86B2" name="Clients">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:41:28 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="93A3FDCD-0CE9-0CD2-B616-E293BCE25C59">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:41:40 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="4D28EC12-1BF8-855D-592D-7B02712ED8F0">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:41:42 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantity_orders" id="3D960179-53D3-DF98-F09C-0CF60389228F">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:41:49 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="5FC1FFFF-4DF2-95A6-D64B-48048D5805AF">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:52:39 UTC</createdTime>
+<generatorID>258924A1-BD83-533F-5810-E3EAC28C182F</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>A4382493-6B18-85F3-8E98-624BC7265BC3</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="873EBDF3-E07A-93D0-C3A1-1A8D2CDF9975" name="Clients PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:50:41 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>93A3FDCD-0CE9-0CD2-B616-E293BCE25C59</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

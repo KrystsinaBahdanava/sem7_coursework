@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F8B47DF4-7172-3021-587A-788B62E9D95B" name="Date">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:54:24 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="date_dt" id="85516BEB-AF86-A609-CAE0-A307C89E9CA7">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:12:32 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="day_month" id="AD94BCEA-8EC6-AC44-617A-CE0B85D2F566">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:12:38 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="year" id="D2C1120C-658C-2310-DD10-4B0A4CB36906">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:13:05 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="month_num" id="80175DFA-37B3-0B20-0C71-8583153AC72D">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:13:18 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="month_full_name" id="22B36000-1D28-5047-8483-89B155DB3827">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:13:25 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="month_short_name" id="A4D076D8-68E9-3A53-4DF2-FFA1A0947268">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:13:31 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cal_day_year" id="44EC4BCB-F948-4DF4-57CF-E9B84956EFFA">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:13:36 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id" id="A91966E4-809E-D6CB-227A-8816215A20AD">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:14:16 UTC</createdTime>
+<generatorID>86C369A3-B4B4-173F-46AD-61DA141120F0</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>A4382493-6B18-85F3-8E98-624BC7265BC3</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="51007B51-11B0-6B0A-EDE8-A9CCF163ADB4">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:14:27 UTC</createdTime>
+<generatorID>C93B5523-55C1-F518-D7F2-C96858F9129C</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>DB9D9268-C81F-3B1D-3A6C-B9AEFE2F75A3</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="645E7372-715E-F8DE-C6C6-B47A199BDA54">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:14:46 UTC</createdTime>
+<generatorID>1CE43987-7EEE-C070-5A4B-BA32BC7CA59C</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>0958BA78-5215-9C71-D18A-3385DB05DD0F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A10D9BCA-134E-BA4E-3872-704567976CFB" name="Date PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 13:13:55 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85516BEB-AF86-A609-CAE0-A307C89E9CA7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

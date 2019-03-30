@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C2CF8E9A-B081-73B3-5DEA-2EE6E0CE905E" name="Country">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:42:20 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="FDB6863E-9F9D-90C1-D2D5-6B4FB7650B81">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:48:21 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="full_country_name" id="032C96F9-636A-6BF8-4893-AF2FFDB6636C">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:48:23 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="short_contry_name" id="57B39581-9670-5460-7778-008750C00D8F">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:48:29 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="76649BCB-3192-1A98-FE19-3EA046772FCC">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:53:29 UTC</createdTime>
+<generatorID>3E203216-44F0-0F44-5F86-C093E2FB17B2</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>A6A64A68-7E1F-99E4-4E41-862FCA3F90A7</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F0AF4DE9-93C7-A169-9E19-E2E3BDE30265" name="Country PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:49:17 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FDB6863E-9F9D-90C1-D2D5-6B4FB7650B81</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

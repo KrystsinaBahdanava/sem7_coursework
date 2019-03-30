@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98FEBD84-F749-D2E1-98BE-5C50C0F3047B" name="district">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:43:52 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="1544887F-D7BD-9EE0-3341-81300594F833">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:49:55 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="district_id" id="0E9B0065-97F1-4A01-3B69-D7F780929022">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:49:57 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="district_name" id="7CD0C13B-BA9E-6B51-6090-D358EBE06E8B">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:50:01 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="9961242E-5101-3BC0-1D04-38F3A7DF26CC">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:53:21 UTC</createdTime>
+<generatorID>A688A42D-9F99-7577-4803-2563CBAB1237</generatorID>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<referedAttribute>F69482A7-DD3C-6566-6311-BD8633EAF17B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F0E950B9-55EB-1B84-269E-A3192BADA806" name="region PK">
+<createdBy>PurpleGhost</createdBy>
+<createdTime>2019-03-30 12:50:26 UTC</createdTime>
+<ownerDesignName>logical model</ownerDesignName>
+<engineerTo>
+<item key="A7CFC455-B27D-E04C-AA5A-74516CD0BDD8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1544887F-D7BD-9EE0-3341-81300594F833</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
